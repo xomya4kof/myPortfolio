@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* main block / background image */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(images/landscape.png);
+  background-position: center;
+  background-size: cover;
+  padding: 10px 10%;
+  overflow: hidden;
+  position: relative;
+  /* max-width: 1920px;
+    max-height: 1080px; */
+}
+
+/* logo */
+.logo {
+  border-radius: 50%;
+  width: 175px;
+}
+
+/* nav menu positioning */
+nav {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 400;
+  padding: 14px 40px;
+  color: #111;
+  background-color: #eeeeee;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  font-size: 20px;
+}
+
+.login-btn {
+  text-decoration: none;
+  color: #111;
+  margin-right: 15px;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 40px;
+  color: #111;
+  background-color: #eeeeee;
+  /* background-image: linear-gradient(to right, #4e92c6, #8ab4c6); */
+  /* font-size: 14px; */
+  border-radius: 30px;
+  /* border-top-right-radius: 0; */
+  transition: 0.5s;
+}
+
+.content {
+  margin-top: 10%;
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 70px;
+  color: #eeeeee;
+}
+
+.content p {
+  margin: 10px 0 30px;
+  color: #eeeeee;
+  animation-delay: 0.5s;
+  font-size: 22px;
+  /* font-weight: bold; */
+  background-color: #1c1c1c4d;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.content .btn {
+  padding: 15px 80px;
+  font-size: 16px;
+  animation-delay: 1s;
+}
+
+.btn:hover {
+  font-size: 20px;
+}
+
+.feature-img {
+  width: 40%;
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border: 10px solid #eeeeee;
+  border-bottom: none;
+}
+
+.feature-img.anim {
+  animation-delay: 0.5s;
+}
+
+/* animation settings */
+.anim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+/* more animation settings */
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
