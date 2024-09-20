@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/background.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  padding: 95px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* listen to music (logo) */
+h1 {
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  letter-spacing: 2px;
+  font-size: 45px;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* navbar links */
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+/* navbar links while hover */
+.navbar ul li a:hover {
+  font-size: 32px;
+}
+
+.content {
+  width: 70%;
+  position: absolute;
+  top: 30%;
+}
+
+/* play/pause block */
+.content div {
+  float: right;
+  /* margin-right: 6%; */
+  margin-top: 340px;
+  display: flex;
+  align-items: center;
+}
+
+/* play/pause text */
+.content div p {
+  font-size: 30px;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* play/pause icon */
+#icon {
+  width: 120px;
+  cursor: pointer;
+}
